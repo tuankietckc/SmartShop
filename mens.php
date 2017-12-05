@@ -5,7 +5,7 @@
 	<?php include 'navigation.php' ?>
 	<div class="page-head">
 	<div class="container">
-		<h3>Women's Wear</h3>
+		<h3>Men's Wear</h3>
 	</div>
 	</div>
 	<!--Product Womens-->
