@@ -8,7 +8,16 @@
 				<div class="slide-visual">
 					<!-- Slide Image Area (1000 x 424) -->
 					<ul class="slide-group" style="display: block; width: 9000px; margin-left: -4000px; overflow: hidden;">
-					<li style="display: block; float: left;"><img class="img-responsive" src="images/ba3.jpg" alt="Dummy Image"></li><li class="slide-dummy" style="display: block; float: left;"><img class="img-responsive" src="images/ba1.jpg" alt="Dummy Image"></li><li class="slide-dummy" style="display: block; float: left;"><img class="img-responsive" src="images/ba2.jpg" alt="Dummy Image"></li><li class="slide-dummy" style="display: block; float: left;"><img class="img-responsive" src="images/ba3.jpg" alt="Dummy Image"></li><li class="slide-dummy" style="display: block; float: left;"><img class="img-responsive" src="images/ba1.jpg" alt="Dummy Image"></li><li class="slide-dummy" style="display: block; float: left;"><img class="img-responsive" src="images/ba2.jpg" alt="Dummy Image"></li><li class="slide-dummy" style="display: block; float: left;"><img class="img-responsive" src="images/ba3.jpg" alt="Dummy Image"></li><li style="display: block; float: left;"><img class="img-responsive" src="images/ba1.jpg" alt="Dummy Image"></li><li style="display: block; float: left;"><img class="img-responsive" src="images/ba2.jpg" alt="Dummy Image"></li></ul>
+					    <li style="display: block; float: left;"><img class="img-responsive" src="images/ba3.jpg" alt="Dummy Image"></li>
+					    <li class="slide-dummy" style="display: block; float: left;"><img class="img-responsive" src="images/ba1.jpg" alt="Dummy Image"></li>
+					    <li class="slide-dummy" style="display: block; float: left;"><img class="img-responsive" src="images/ba2.jpg" alt="Dummy Image"></li>
+					    <li class="slide-dummy" style="display: block; float: left;"><img class="img-responsive" src="images/ba3.jpg" alt="Dummy Image"></li>
+					    <li class="slide-dummy" style="display: block; float: left;"><img class="img-responsive" src="images/ba1.jpg" alt="Dummy Image"></li>
+					    <li class="slide-dummy" style="display: block; float: left;"><img class="img-responsive" src="images/ba2.jpg" alt="Dummy Image"></li>
+					    <li class="slide-dummy" style="display: block; float: left;"><img class="img-responsive" src="images/ba3.jpg" alt="Dummy Image"></li>
+					    <li style="display: block; float: left;"><img class="img-responsive" src="images/ba1.jpg" alt="Dummy Image"></li>
+					    <li style="display: block; float: left;"><img class="img-responsive" src="images/ba2.jpg" alt="Dummy Image"></li>
+					</ul>
 
 					<!-- Slide Description Image Area (316 x 328) -->
 					<div class="script-wrap">

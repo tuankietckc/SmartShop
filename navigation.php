@@ -41,10 +41,8 @@
 				<li>
 					<a href="login-register.php" class="use1"></a>
 				</li>
-				<li><a class="fb" href="Google.com"></a></li>
-				<li><a class="twi" href="#"></a></li>
-				<li><a class="insta" href="#"></a></li>
-				<li><a class="you" href="#"></a></li>
+				<li><a href="#"><?= $_SESSION["TenKhachHang"]  ?> </a></li>
+				
 			</ul>
 		</div>
 		<div class="clearfix"></div>

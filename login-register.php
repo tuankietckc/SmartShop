@@ -11,7 +11,7 @@
 
                         <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>
                             
-                        <form id="loginform" class="form-horizontal" role="form">
+                        <form id="loginform" action="xuly-dangnhap.php" method="POST" class="form-horizontal" role="form">
                                     
                             <div style="margin-bottom: 25px" class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
@@ -22,9 +22,6 @@
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
                                         <input id="login-password" type="password" class="form-control" name="password" placeholder="Mật khẩu...">
                                     </div>
-                                    
-
-                                
                             <div class="input-group">
                                       <div class="checkbox">
                                         <label>
@@ -36,9 +33,8 @@
 
                                 <div style="margin-top:10px" class="form-group">
                                     <!-- Button -->
-
                                     <div class="col-sm-12 controls">
-                                      <a id="btn-login" href="#" class="btn btn-success">Đăng nhập  </a>
+                                      <button id="btn-login" type="submit" class="btn btn-success"><i class="icon-hand-right"></i> &nbsp Đăng Nhập</button>
                                       <a id="btn-fblogin" href="#" class="btn btn-primary">Login with Facebook</a>
 
                                     </div>
@@ -69,7 +65,7 @@
                             <div style="float:right; font-size: 85%; position: relative; top:-10px"><a id="signinlink" href="#" onclick="$('#signupbox').hide(); $('#loginbox').show()">Đăng nhập</a></div>
                         </div>  
                         <div class="panel-body" >
-                            <form id="signupform" class="form-horizontal" role="form">
+                            <form id="signupform" class="form-horizontal" action="xuly-dangky.php" method="POST" role="form">
                                 
                                 <div id="signupalert" style="display:none" class="alert alert-danger">
                                     <p>Error:</p>
@@ -86,32 +82,26 @@
                                 <div class="form-group">
                                     <label for="email" class="col-md-3 control-label">Email</label>
                                     <div class="col-md-9">
-                                        <input type="text" class="form-control" name="email" placeholder="Example@gmail.com">
+                                        <input type="text" class="form-control" name="txtemail" placeholder="Example@gmail.com">
                                     </div>
                                 </div>
                                     
                                 <div class="form-group">
-                                    <label for="ho" class="col-md-3 control-label">Họ</label>
+                                    <label for="txthoten" class="col-md-3 control-label">Họ và tên</label>
                                     <div class="col-md-9">
-                                        <input type="text" class="form-control" name="ho" placeholder="Họ...">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="ten" class="col-md-3 control-label">Tên</label>
-                                    <div class="col-md-9">
-                                        <input type="text" class="form-control" name="ten" placeholder="Tên...">
+                                        <input type="text" class="form-control"  name="txthoten" placeholder="Họ và tên...">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="matkhau" class="col-md-3 control-label">Mật khẩu</label>
                                     <div class="col-md-9">
-                                        <input type="password" class="form-control" name="matkhau" placeholder="Mật khẩu...">
+                                        <input type="password" class="form-control" name="txtmatkhau" placeholder="Mật khẩu...">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <!-- Button -->                                        
                                     <div class="col-md-offset-3 col-md-9">
-                                        <button id="btn-signup" type="button" class="btn btn-info"><i class="icon-hand-right"></i> &nbsp Sign Up</button>
+                                        <button id="btn-signup" type="submit" class="btn btn-info"><i class="icon-hand-right"></i> &nbsp Đăng ký</button>
                                         <span style="margin-left:8px;">or</span>  
                                     </div>
                                 </div>
