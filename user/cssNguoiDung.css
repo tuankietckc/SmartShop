@@ -1,0 +1,66 @@
+.tensanpham{
+    padding-top:20px;
+    padding-bottom: 20px;
+}
+
+.tensanpham h3{
+    color: #FDA30E;
+    font-size: 35px;
+}
+
+.giamoi, .giacu{
+    font-size: 30px;
+    padding-right: 15px;    
+}
+
+.giacu{
+    color: #999;
+    font-size: 24px;
+}
+
+
+.giasanpham{
+    padding-top: 5px;
+    padding-bottom: 30px;
+}
+
+.soluongmua{
+   
+}
+
+.soluongmua span{
+    margin-right: 20px;
+}
+
+.themvaogio{
+    padding-top: 25px;
+}
+
+.add-review h4{
+    color: #FDA30E;;
+}
+.tennguoibinhluan{
+    padding-bottom: 10px;
+}
+
+
+.tennguoibinhluan ul li{
+    text-decoration: none;
+    list-style-type: none;
+    
+}
+
+.thongtinsanpham .mota{
+    padding-top : 15px;
+     
+    text-align: justify; 
+}
+
+.tonkho span{
+    padding-top: 15px;
+    color: #FDA30E; 
+}
+.tonkho {
+    color: green;
+}
+
