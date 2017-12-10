@@ -4,7 +4,7 @@
 		<ul>
 			<li><span class="glyphicon glyphicon-time" aria-hidden="true"></span>Free and Fast Delivery</li>
 			<li><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>Free shipping On all orders</li>
-			<li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><a href="mailto:info@example.com">info@example.com</a></li>
+			<li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><a href="mailto:info@example.com"> info@example.com</a></li>
 		</ul>
 	</div>
 </div>
@@ -22,7 +22,7 @@
 				</div>
 				<div class="section_room">
 					<select id="country" onchange="change_country(this.value)" class="frm-field required">
-						<option value="null">All categories</option>
+					
 						<option value="null">Electronics</option>     
 						<option value="AX">kids Wear</option>
 						<option value="AX">Men's Wear</option>
@@ -39,11 +39,18 @@
 		<div class="col-md-3 header-right footer-bottom">
 			<ul>
 				<li>
-					<a href="login-register.php" class="use1"></a>
+				<?php 
+					$login_register = "";
+					if($_SESSION["TenKhachHang"] != null)
+						$login_register = "./user/profile.php?taikhoan=".$_SESSION["TaiKhoan"];
+					else
+						$login_register = "login-register.php";
+				?>
+					<a href="<?= $login_register ?>" class="use1"></a>
 				</li>
-				<li><a href="#"><?= $_SESSION["TenKhachHang"]  ?> </a></li>
-				
+				<a href="<?= $login_register ?>" class="use1"><?php  echo $_SESSION["TenKhachHang"]; ?></a>
 			</ul>
+			
 		</div>
 		<div class="clearfix"></div>
 	</div>
@@ -76,7 +83,14 @@
 		</div>
 		<div class="top_nav_right">
 			<div class="cart box_1">
-						<a href="checkout.php">
+					<?php 
+						$checkout = "";
+						if($_SESSION["TaiKhoan"] != null)
+							$checkout = "checkout.php";
+						else
+							$checkout = "login-register.php";
+					?>
+						<a href="<?= $checkout ?>">
 							<h3> <div class="total">
 								<i class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></i>
 								<span class="simpleCart_total">$45.99</span> (<span id="simpleCart_quantity" class="simpleCart_quantity">1</span> items)</div>

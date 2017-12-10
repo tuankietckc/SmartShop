@@ -1,11 +1,15 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<?php include 'stylepost.php' ?>
+<?php include 'stylepage.php' ?>
 <body>
-	<?php include 'navigation.php' ?>
+	<?php 
+		include 'navigation.php'; 
+		var_dump($_SESSION["TaiKhoan"]);
+	?>
 	<div class="page-head">
 		<div class="container">
-			<h3>Check Out</h3>
+			<h3>Check Out </h3>
 		</div>
 	</div>
 	<div class="checkout">
