@@ -2,15 +2,11 @@
 <html lang="en">
 	<?php include 'stylepage.php' ?>
 	<?php include 'config.php' ?>
-	<?php 
-		$sqldanhsachsp = "SELECT * FROM sanpham WHERE trangthaisanpham = 1";
-		$ketquadanhsachsp = $conn->query($sqldanhsachsp);
-		if($ketquadanhsachsp->num_rows > 0){
-			while($row = $ketquadanhsachsp->fetch_assoc()){	
-	?>
+	
 			
 <body>
 	<?php include 'navigation.php' ?>
+
 	<div class="banner-grid">
 	<div id="visual">
 			<div class="slide-visual">
@@ -72,11 +68,11 @@
 			<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">		  	 
 				<div class="resp-tabs-container">
 					<h2 class="resp-accordion resp-tab-active" role="tab" aria-controls="tab_item-0"><span class="resp-arrow"></span>Latest Designs</h2><div class="tab-1 resp-tab-content resp-tab-content-active" aria-labelledby="tab_item-0" style="display:block">
-						<div class="col-md-3 product-men yes-marg">
+						<div class="col-md-3 product-men yes-marg">		
 							<div class="men-pro-item simpleCart_shelfItem">
 								<div class="men-thumb-item">
-									<img src="<?= $row["hinhanh"] ?>" alt="" class="pro-image-front">
-									<img src="<?= $row["hinhanh"] ?>" alt="" class="pro-image-back">
+									<img src="" alt="" class="pro-image-front">
+									<img src="" alt="" class="pro-image-back">
 										<div class="men-cart-pro">
 											<div class="inner-men-cart-pro">
 												<a href="post.php" class="link-product-add-cart">Quick View</a>
@@ -86,9 +82,9 @@
 										
 								</div>
 								<div class="item-info-product ">
-									<h4><a href="post.php"><?= $row["tensanpham"] ?></a></h4>
+									<h4><a href="post.php">tensp</a></h4>
 									<div class="info-product-price">
-										<span class="item_price"><?= $row["dongia"] ?> VNĐ</span>
+										<span class="item_price"> VNĐ</span>
 									</div>
 									<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>									
 								</div>
@@ -103,10 +99,6 @@
 	</div>
 	</div>
 </div>
-	<?php
-		}
-			}
-	?>
 <?php include 'footer.php' ?>
 </body>
 </html>
