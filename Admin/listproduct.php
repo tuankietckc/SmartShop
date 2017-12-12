@@ -10,7 +10,7 @@
                         <th style="text-align: center;">Số lượng</th>
                         <th style="text-align: center;">Đơn giá</th>
                         <th style="text-align: center;">Loại sản phẩm</th>
-                        <th style="text-align: center;">Sửa</th>
+                        <th style="text-align: center;">Trạng thái</th>
                         <th style="text-align: center;">Xóa</th>
                     </tr>
                 </thead>
@@ -18,25 +18,42 @@
                     <ItemTemplate>
                         <tbody>
                             <?php
-    include '../config.php';
-    $sql_layLoaiSP = "Select * from LoaiSanPham";
-    $LSP = $conn->query($sql_layLoaiSP);
-    if($LSP->num_rows > 0)
-        ?>
+                            include '../config.php';
+                            $sql_layLoaiSP = "Select * from SanPham, LoaiSanPham Where LoaiSanPham = MaLoaiSanPham";
+                            $LSP = $conn->query($sql_layLoaiSP);
+                            if($LSP->num_rows > 0)
+                            {
+                                while($row = $LSP->fetch_assoc())
+                                {
+
+                                ?>
                             <tr>
                                 <td>
-                                    <a href="#" ID="lbtnProduct" Style="text-decoration:none">Tên Sản phẩm</a>
+                                    <a href="#" ID="lbtnProduct" Style="text-decoration:none"><?= $row["tensanpham"] ?></a>
                                 </td>
-                                <td>Số lượng</td>
-                                <td>Đơn giá</td>
-                                <td>Tên loại</td>
+                                <td><?= $row["soluong"] ?></td>
+                                <td><?= $row["dongia"] ?></td>
+                                <td><?= $row["TenLoaisanpham"] ?></td>
+                                <?php 
+                                $trangthai = "";
+                                if($row["trangthaisanpham"] == 1)
+                                    $trangthai = "";
+                                else
+                                    $trangthai = "Bị cấm";
+                            ?>    
+                                <td><?= $trangthai ?></td>
                                 <td>
-                                    <a href="#" ID="btnSuaSPLink" CssClass="btn btn-success btn-xs"><span class="glyphicon glyphicon-edit"></span></a>
-                                </td>
-                                <td>
-                                    <a href="#" ID="btnXoaSPLink" runat="server" CssClass="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span></a>
+                                    <?php 
+                    $url = "xuly_xoa.php?masanpham=" .$row["masanpham"]."&trangthai=".$row["trangthaisanpham"];
+                                     ?>
+                                    <a href="<?= $url ?>" ID="btnXoaSPLink" runat="server" CssClass="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span></a>
                                 </td>
                             </tr>
+                            <?php 
+
+                                }
+                            }
+                             ?>
                         </tbody>
                     </ItemTemplate>
                 </asp:Repeater>
