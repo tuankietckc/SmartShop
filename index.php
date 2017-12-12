@@ -11,52 +11,50 @@
 			
 <body>
 	<?php include 'navigation.php' ?>
-
 	<div class="banner-grid">
-		<div id="visual" class="pignose-layerslider">
-				<div class="slide-visual">
-					<!-- Slide Image Area (1000 x 424) -->
-					<ul class="slide-group" style="display: block; width: 9000px; margin-left: -4000px; overflow: hidden;">
-					    <li style="display: block; float: left;"><img class="img-responsive" src="images/ba3.jpg" alt="Dummy Image"></li>
-					    <li class="slide-dummy" style="display: block; float: left;"><img class="img-responsive" src="images/ba1.jpg" alt="Dummy Image"></li>
-					    <li class="slide-dummy" style="display: block; float: left;"><img class="img-responsive" src="images/ba2.jpg" alt="Dummy Image"></li>
-					    <li class="slide-dummy" style="display: block; float: left;"><img class="img-responsive" src="images/ba3.jpg" alt="Dummy Image"></li>
-					    <li class="slide-dummy" style="display: block; float: left;"><img class="img-responsive" src="images/ba1.jpg" alt="Dummy Image"></li>
-					    <li class="slide-dummy" style="display: block; float: left;"><img class="img-responsive" src="images/ba2.jpg" alt="Dummy Image"></li>
-					    <li class="slide-dummy" style="display: block; float: left;"><img class="img-responsive" src="images/ba3.jpg" alt="Dummy Image"></li>
-					    <li style="display: block; float: left;"><img class="img-responsive" src="images/ba1.jpg" alt="Dummy Image"></li>
-					    <li style="display: block; float: left;"><img class="img-responsive" src="images/ba2.jpg" alt="Dummy Image"></li>
-					</ul>
+	<div id="visual">
+			<div class="slide-visual">
+				<!-- Slide Image Area (1000 x 424) -->
+				<ul class="slide-group">
+					<li><img class="img-responsive" src="images/ba1.jpg" alt="Dummy Image" /></li>
+					<li><img class="img-responsive" src="images/ba2.jpg" alt="Dummy Image" /></li>
+					<li><img class="img-responsive" src="images/ba3.jpg" alt="Dummy Image" /></li>
+				</ul>
 
-					<!-- Slide Description Image Area (316 x 328) -->
-					<div class="script-wrap">
-						<div class="script-inner"><ul class="script-group" style="display: block; width: 2484px; margin-left: -1376.88px; overflow: hidden;">		
-						<li style="display: block; float: left;"><div class="inner-script"><img class="img-responsive" src="images/baa2.jpg" alt="Dummy Image"></div></li><li style="display: block; float: left;"><div class="inner-script"><img class="img-responsive" src="images/baa3.jpg" alt="Dummy Image"></div></li><li class="slide-dummy" style="display: block; float: left;"><div class="inner-script"><img class="img-responsive" src="images/baa1.jpg" alt="Dummy Image"></div></li><li class="slide-dummy" style="display: block; float: left;"><div class="inner-script"><img class="img-responsive" src="images/baa2.jpg" alt="Dummy Image"></div></li><li class="slide-dummy" style="display: block; float: left;"><div class="inner-script"><img class="img-responsive" src="images/baa3.jpg" alt="Dummy Image"></div></li><li class="slide-dummy" style="display: block; float: left;"><div class="inner-script"><img class="img-responsive" src="images/baa1.jpg" alt="Dummy Image"></div></li><li class="slide-dummy" style="display: block; float: left;"><div class="inner-script"><img class="img-responsive" src="images/baa2.jpg" alt="Dummy Image"></div></li><li class="slide-dummy" style="display: block; float: left;"><div class="inner-script"><img class="img-responsive" src="images/baa3.jpg" alt="Dummy Image"></div></li><li style="display: block; float: left;"><div class="inner-script"><img class="img-responsive" src="images/baa1.jpg" alt="Dummy Image"></div></li></ul><div class="slide-pagination completedPagination"><a href="#" class="btn-page">1번째 슬라이드 보기</a><a href="#" class="btn-page">2번째 슬라이드 보기</a><a href="#" class="btn-page on">3번째 슬라이드 보기</a></div></div><div class="script-tint"></div>
-						<div class="slide-controller">
-							<a href="#" class="btn-prev"><img src="images/btn_prev.png" alt="Prev Slide"></a>
-							<a href="#" class="btn-play"><img src="images/btn_play.png" alt="Start Slide"></a>
-							<a href="#" class="btn-pause"><img src="images/btn_pause.png" alt="Pause Slide"></a>
-							<a href="#" class="btn-next"><img src="images/btn_next.png" alt="Next Slide"></a>
-						</div>
+				<!-- Slide Description Image Area (316 x 328) -->
+				<div class="script-wrap">
+					<ul class="script-group">
+						<li><div class="inner-script"><img class="img-responsive" src="images/baa1.jpg" alt="Dummy Image" /></div></li>
+						<li><div class="inner-script"><img class="img-responsive" src="images/baa2.jpg" alt="Dummy Image" /></div></li>
+						<li><div class="inner-script"><img class="img-responsive" src="images/baa3.jpg" alt="Dummy Image" /></div></li>
+					</ul>
+					<div class="slide-controller">
+						<a href="#" class="btn-prev"><img src="images/btn_prev.png" alt="Prev Slide" /></a>
+						<a href="#" class="btn-play"><img src="images/btn_play.png" alt="Start Slide" /></a>
+						<a href="#" class="btn-pause"><img src="images/btn_pause.png" alt="Pause Slide" /></a>
+						<a href="#" class="btn-next"><img src="images/btn_next.png" alt="Next Slide" /></a>
 					</div>
-					<div class="clearfix"></div>
-				<div class="slide_tint left">&nbsp;</div><div class="slide_tint right">&nbsp;</div></div>
+				</div>
 				<div class="clearfix"></div>
 			</div>
-		<script type="text/javascript" src="js/pignose.layerslider.js"></script>
-		<script type="text/javascript">
-		//<![CDATA[
-			$(window).load(function() {
-				$('#visual').pignoseLayerSlider({
-					play    : '.btn-play',
-					pause   : '.btn-pause',
-					next    : '.btn-next',
-					prev    : '.btn-prev'
-				});
+			<div class="clearfix"></div>
+		</div>
+	<script type="text/javascript" src="js/pignose.layerslider.js"></script>
+	<script type="text/javascript">
+	//<![CDATA[
+		$(window).load(function() {
+			$('#visual').pignoseLayerSlider({
+				play    : '.btn-play',
+				pause   : '.btn-pause',
+				next    : '.btn-next',
+				prev    : '.btn-prev'
 			});
-		//]]>
-		</script>
-	</div>
+		});
+	//]]>
+	</script>
+
+</div>
+	
 	<div class="product-easy">
 	<div class="container">
 		<script src="js/easyResponsiveTabs.js" type="text/javascript"></script>

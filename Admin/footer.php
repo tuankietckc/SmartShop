@@ -4,7 +4,7 @@
                 </div>
             </div>
         </div>
-    </form>
+    <!--</form>-->
     <script>$(function () {
     $('.navbar-toggle').click(function () {
         $('.navbar-nav').toggleClass('slide-in');
