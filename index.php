@@ -82,7 +82,7 @@
 									<img src="<?= substr($row["hinhanh"],1) ?>" alt="" class="pro-image-back">
 										<div class="men-cart-pro">
 											<div class="inner-men-cart-pro">
-												<a href="post.php" class="link-product-add-cart">Quick View</a>
+												<a href="post.php?id=<?= $row["masanpham"] ?>" class="link-product-add-cart">Quick View</a>
 											</div>
 										</div>
 										<span class="product-new-top">New</span>
@@ -93,7 +93,7 @@
 									<div class="info-product-price">
 										<span class="item_price"><?= number_format($row["dongia"]) ?> VNĐ</span>
 									</div>
-									<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>									
+									<a href="checkout.php?id=<?= $row["masanpham"] ?>" name="them" class="item_add single-item hvr-outline-out button2">Add to cart</a>									
 								</div>
 							</div>
 						</div>

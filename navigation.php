@@ -93,7 +93,7 @@
 						<a href="<?= $checkout ?>">
 							<h3> <div class="total">
 								<i class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></i>
-								<span class="simpleCart_total">$45.99</span> (<span id="simpleCart_quantity" class="simpleCart_quantity">1</span> items)</div>
+								<span class="simpleCart_total">0</span> (<span id="simpleCart_quantity" class="simpleCart_quantity">0</span> items)</div>
 								
 							</h3>
 						</a>
