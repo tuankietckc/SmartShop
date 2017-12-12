@@ -1,8 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 	<?php include 'stylepage.php' ?>
+	<?php include 'config.php' ?>
+	<?php 
+		$sqldanhsachsp = "SELECT * FROM sanpham WHERE trangthaisanpham = 1";
+		$ketquadanhsachsp = $conn->query($sqldanhsachsp);
+		if($ketquadanhsachsp->num_rows > 0){
+			while($row = $ketquadanhsachsp->fetch_assoc()){	
+	?>
+			
 <body>
 	<?php include 'navigation.php' ?>
+
 	<div class="banner-grid">
 		<div id="visual" class="pignose-layerslider">
 				<div class="slide-visual">
@@ -21,10 +30,7 @@
 
 					<!-- Slide Description Image Area (316 x 328) -->
 					<div class="script-wrap">
-						<div class="script-inner"><ul class="script-group" style="display: block; width: 2484px; margin-left: -1376.88px; overflow: hidden;">
-							
-							
-							
+						<div class="script-inner"><ul class="script-group" style="display: block; width: 2484px; margin-left: -1376.88px; overflow: hidden;">		
 						<li style="display: block; float: left;"><div class="inner-script"><img class="img-responsive" src="images/baa2.jpg" alt="Dummy Image"></div></li><li style="display: block; float: left;"><div class="inner-script"><img class="img-responsive" src="images/baa3.jpg" alt="Dummy Image"></div></li><li class="slide-dummy" style="display: block; float: left;"><div class="inner-script"><img class="img-responsive" src="images/baa1.jpg" alt="Dummy Image"></div></li><li class="slide-dummy" style="display: block; float: left;"><div class="inner-script"><img class="img-responsive" src="images/baa2.jpg" alt="Dummy Image"></div></li><li class="slide-dummy" style="display: block; float: left;"><div class="inner-script"><img class="img-responsive" src="images/baa3.jpg" alt="Dummy Image"></div></li><li class="slide-dummy" style="display: block; float: left;"><div class="inner-script"><img class="img-responsive" src="images/baa1.jpg" alt="Dummy Image"></div></li><li class="slide-dummy" style="display: block; float: left;"><div class="inner-script"><img class="img-responsive" src="images/baa2.jpg" alt="Dummy Image"></div></li><li class="slide-dummy" style="display: block; float: left;"><div class="inner-script"><img class="img-responsive" src="images/baa3.jpg" alt="Dummy Image"></div></li><li style="display: block; float: left;"><div class="inner-script"><img class="img-responsive" src="images/baa1.jpg" alt="Dummy Image"></div></li></ul><div class="slide-pagination completedPagination"><a href="#" class="btn-page">1번째 슬라이드 보기</a><a href="#" class="btn-page">2번째 슬라이드 보기</a><a href="#" class="btn-page on">3번째 슬라이드 보기</a></div></div><div class="script-tint"></div>
 						<div class="slide-controller">
 							<a href="#" class="btn-prev"><img src="images/btn_prev.png" alt="Prev Slide"></a>
@@ -175,8 +181,8 @@
 						<div class="col-md-3 product-men yes-marg">
 							<div class="men-pro-item simpleCart_shelfItem">
 								<div class="men-thumb-item">
-									<img src="images/mw2.png" alt="" class="pro-image-front">
-									<img src="images/mw2.png" alt="" class="pro-image-back">
+									<img src="<?= $row["hinhanh"] ?>" alt="" class="pro-image-front">
+									<img src="<?= $row["hinhanh"] ?>" alt="" class="pro-image-back">
 										<div class="men-cart-pro">
 											<div class="inner-men-cart-pro">
 												<a href="post.php" class="link-product-add-cart">Quick View</a>
@@ -186,10 +192,9 @@
 										
 								</div>
 								<div class="item-info-product ">
-									<h4><a href="post.php">T shirts</a></h4>
+									<h4><a href="post.php"><?= $row["tensanpham"] ?></a></h4>
 									<div class="info-product-price">
-										<span class="item_price">$45.99</span>
-										<del>$69.71</del>
+										<span class="item_price"><?= $row["dongia"] ?> VNĐ</span>
 									</div>
 									<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>									
 								</div>
@@ -204,6 +209,10 @@
 	</div>
 	</div>
 </div>
+	<?php
+		}
+			}
+	?>
 <?php include 'footer.php' ?>
 </body>
 </html>
