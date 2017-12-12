@@ -11,7 +11,6 @@
                 <tr>
                     <th style="text-align: center;">Loại tài khoản</th>
                     <th style="text-align: center;">Tên tài khoản</th>
-                    <th style="text-align: center;">Họ tên</th>
                     <th style="text-align: center;">Email</th>
                     <th style="text-align: center;">Trạng Thái</th>
                     <th style="text-align: center;">Sửa</th>
@@ -32,12 +31,11 @@
                     ?>
                         <td><?= $loaitk ?></td>
                         <td><?= $row["TenTaiKhoan"] ?></td>
-                        <td><?= $row["HoTen"] ?></td>
                         <td><?= $row["Emai"] ?></td>
                     <?php 
                         $trangthai = "";
                         if($row["TrangThai"] == 1)
-                            $trangthai = "Bình thường";
+                            $trangthai = "";
                         else
                             $trangthai = "Bị cấm";
                     ?>    

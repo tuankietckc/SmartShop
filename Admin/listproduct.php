@@ -17,6 +17,12 @@
                 <asp:Repeater ID="Repeater1" runat="server">
                     <ItemTemplate>
                         <tbody>
+                            <?php
+    include '../config.php';
+    $sql_layLoaiSP = "Select * from LoaiSanPham";
+    $LSP = $conn->query($sql_layLoaiSP);
+    if($LSP->num_rows > 0)
+        ?>
                             <tr>
                                 <td>
                                     <a href="#" ID="lbtnProduct" Style="text-decoration:none">Tên Sản phẩm</a>

@@ -1,7 +1,7 @@
 <?php 
 	$servername = "localhost";
 	$username = "root";
-	$password = "mysql";
+	$password = "";
 	$dbname = "smartshop";
 	// Tạo kết nối
 	$conn = new mysqli($servername, $username, $password, $dbname);
